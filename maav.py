@@ -51,7 +51,7 @@ class MAAV:
 
     def data_visualizer(self):
         # Create custom index calculation
-        custom_index = self.df_pivoted[("Close", "SMH")] * self.df_pivoted[("Close", "XLK")]/(self.df_pivoted[("Close", "UUP")] * self.df_pivoted[("Close", "XLU")]) # * df_pivoted[("Close", "VXX")])
+        custom_index = self.df_pivoted[("Close", "STK4")] * self.df_pivoted[("Close", "STK2")]/(self.df_pivoted[("Close", "STK1")] * self.df_pivoted[("Close", "STK3")]) 
         last_date_value = custom_index.iloc[-1] # custom_index.tail(1).values[0]
         last_date = custom_index.index[-1]
 

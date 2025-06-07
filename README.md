@@ -8,4 +8,6 @@ User defined stock market custom index and visualized with time series chart and
 6. it is also required to install all the python packages required.
 7. run maav.py -d once a day after the market close for about one hour
 8. if you need to run it second time, you can use the command maav.py -f histodata_yyyymmdd.csv.
-9. run macnbc.py when market is open, and compare its value against the values of previous day. 
+9. run macnbc.py when market is open, and compare its value against the values of previous day.
+10. you have to change the stocks selected and the formular which defines the customer index.
+11. in the example, they are STK1, STK2, STK3, STK4 and STK2*STK4/(STK1*STK3)
